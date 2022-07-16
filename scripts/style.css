@@ -5,5 +5,13 @@ header {
 
 #employee-data {
     color:blue;
+    
+    
 }
+table, th, td {
+    border: 1px solid blue;
+    border-collapse:collapse;
+  }
+
+  
 

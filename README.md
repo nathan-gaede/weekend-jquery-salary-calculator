@@ -24,13 +24,23 @@ Create an application that records employee salaries and adds salaries up to rep
 
 The application should have an input form that collects _employee first name, last name, ID number, job title, annual salary_.
 
-- [] Add the above elements to the HTML 
+- [x] Add the above elements to the HTML 
 - [x] Add a Submit button to the HTML
-- [] Create a table to display the above elements
+- [x] Create a table to display the above elements
 
 A 'Submit' button should collect the form information, store the information to calculate monthly costs, append information to the DOM and clear the input fields. Using the stored information, calculate monthly costs and append this to the to DOM. If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
 
+- [x] Add the readyNow function to client.js
+- [] Add functionality to the "Submit" button to collect form information
+- [] Calculate monthly costs
+- [] Append information to the DOM
+- [] Clear the input fields
+- [] If monthly total cost exceeds $20,000 add a red background color to the total monthly cost
+
 Create a delete button that removes an employee from the DOM. For Base mode, it does **not** need to remove that Employee's salary from the reported total.
+
+- [] Create a delete button
+
 
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
