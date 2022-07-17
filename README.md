@@ -32,10 +32,12 @@ A 'Submit' button should collect the form information, store the information to 
 
 - [x] Add the readyNow function to client.js
 - [x] Create blank fields to enter employee information
-- [] Add functionality to the "Submit" button to collect form information
-- [] Calculate monthly costs
+- [x] Add functionality to the "Submit" button to collect form information
+
 - [] Append information to the DOM
+
 - [] Clear the input fields
+- [] Calculate monthly costs
 - [] If monthly total cost exceeds $20,000 add a red background color to the total monthly cost
 
 Create a delete button that removes an employee from the DOM. For Base mode, it does **not** need to remove that Employee's salary from the reported total.

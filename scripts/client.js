@@ -18,6 +18,10 @@ function addEmployeeInputs () {
     $('#employee-data').append(`
     <tr>
         <td>${firstName}</td>
+        <td>${lastName}</td>
+        <td>${employeeId}</td>
+        <td>${employeeTitle}</td>
+        <td>${annualSalary}</td>
     </tr>
     `)
 }
