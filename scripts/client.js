@@ -3,7 +3,7 @@ console.log('scripts sourced')
 $(document).ready(readyNow); 
 
 function readyNow() {
-    console.log('testing readyNow');
+    //console.log('testing readyNow');
     $('#employee-submit').on('click', addEmployeeInputs);
     $('body').on('click', '.delete-button', deleteEmployee);
 
@@ -72,7 +72,7 @@ function addEmployeeInputs () {
 // }
 
 function deleteEmployee() {
-    console.log('in delete employee');
+    //console.log('in delete employee');
     $(this).parent().parent().empty();
 }
 
