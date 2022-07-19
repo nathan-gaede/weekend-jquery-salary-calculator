@@ -36,7 +36,7 @@ function addEmployeeInputs () {
         Monthly Expenses: $${sum}
         `);
      if (sum > 20000) {
-        console.log('too expensive');
+        //console.log('too expensive');
         //document.getElementById("monthly-expenses").style.backgroundColor="red"
         $('#monthly-expenses').addClass("red");
 

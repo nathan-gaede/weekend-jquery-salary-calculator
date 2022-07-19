@@ -12,6 +12,19 @@ Your project description goes here. What problem did you solve? How did you solv
 
 Create an application that records employee salaries and adds salaries up to report monthly costs. 
 
+For this application, the end user will be able to add elements to the DOM.  The problem solved was calculating and displaying monthly costs using the value of annual salary.  
+
+The way the problem was solved was to create a function to append a table on the DOM using the .append() jQuery built-in.  To display a total monthly cost, the .text() function was used to move the annual cost divided by 12 for each employee to the DOM.  The .text() function was used instead of append to overwrite the previous monthly totals when new employees were added to the table.
+
+The button functionality was handled by an on click handler in the readyNow function. One handler was for the submit button (to add employee data), the other handler was for the delete button to delete an employee row from the table.  The delete button function utilized the "$(this).parent().parent().empty();" code to find the grandparent of the delete button in the HTML and empty the <td></td> in the "employee-data" table.
+
+If monthly costs exceeded $20,000 code was written to say if monthly totals > 20000, "$('#monthly-expenses').addClass("red");".  A class .red {
+    background-color: red;
+}
+was added to the CSS to complete this funtionality.
+
+
+
 - [x] Create HTML file (index.html)
 - [x] Create stylesheet (style.css)
 - [x] Create js file (client.js)
@@ -42,7 +55,7 @@ A 'Submit' button should collect the form information, store the information to 
 
 Create a delete button that removes an employee from the DOM. For Base mode, it does **not** need to remove that Employee's salary from the reported total.
 
-- [] Create a delete button
+- [x] Create a delete button
 
 
 
