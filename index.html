@@ -1,85 +1,80 @@
 <HTML>
-    <head>
-        <script src="scripts/jquery.js"></script>
-        <script src="scripts/client.js"></script>
-        <link rel="stylesheet" href="scripts/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
-    </head>
+<head>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="scripts/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
-    <body>
-        <header><h1>Employee Salary Calculator</h1></header>
+</head>
 
-        <!-- <div id="content">
+<body>
+    <header>
+        <h1>Employee Salary Calculator</h1>
+    </header>
+
+    <!-- <div id="content">
             <div id="input-fields">
                 <label for="first-name-input">First Name</label>
                 <label for="last-name-input">Last Name</label>
                 <input type="text"
                 id="first-name-input">
         </div> -->
-            
+
+
+    <h2>Add Employee</h2>
+
+
+
+ 
+
+
+
+        <div class="input-container" id="input-fields">
+            <!-- <label for="first-name-input">First Name</label> -->
+            <input type="text" id="first-name-input" placeholder="First Name">
+
+            <!-- <label for="last-name-input">Last Name</label> -->
+            <input type="text" id="last-name-input" placeholder="Last Name">
+
+            <!-- <label for="id-input">ID</label> -->
+            <input type="text" id="id-input" placeholder="ID">
+
+            <!-- <label for="title-input">Title</label> -->
+            <input type="text" id="title-input" placeholder="Title">
+
+            <!-- <label for="annual-salary-input">Annual Salary</label> -->
+            <input type="text" id="annual-salary-input" placeholder="Annual Salary">
         
-        <h2>Add Employee</h2>
-            
-        
-
-            <div>
-            
-          
-                
-            <div id="input-fields">
-                <label for="first-name-input">First Name</label>
-                <input type="text"
-                id="first-name-input">
-
-                <label for="last-name-input">Last Name</label>
-                <input type="text"
-                id="last-name-input">
-
-                <label for="id-input">ID</label>
-                <input type="text"
-                id="id-input">
-
-                <label for="title-input">Title</label>
-                <input type="text"
-                id="title-input">
-
-                <label for="annual-salary-input">Annual Salary</label>
-                <input type="text"
-                id="annual-salary-input">
-
-                <div>
-                    <button id="employee-submit"><h3>Submit</h3>
-                    </button>
-                </div>
-                
-
-                <table id="employee-data">
-               
-                    <tr>
-            
-                    <td>First Name</td>
-                    <td>Last Name</td>
-                    <td>ID</td>
-                    <td>Title</td>
-                    <td id ="salary">Annual Salary</td>
-                    
-                    </tr>
-
-                </table>
-
-            <div>
-                <h3>Monthly Expenses:</h3>
-                <table id="monthly-expenses">
-                <th>Monthly Expenses</th>
-               <td></td>
-                </table>
-            </div>
-
-            
-            
         </div>
-    </div>
+           
+                <button class="submit-button" id="employee-submit">Submit</button>
+                
+            
 
-    </body>
+
+            <table>
+                <thead>
+                    <tr>
+
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th id="salary">Annual Salary</th>
+                        <!-- ensure button is within table -->
+                            <th></th>
+                    </tr>
+                </thead>
+                <tbody id="employee-data">
+                    
+                </tbody>
+            </table>
+
+        
+   
+    
+    <h3 id="monthly-expenses">Monthly Expenses: $0</h3>
+</body>
+
 </HTML>

@@ -5,7 +5,7 @@ $(document).ready(readyNow);
 function readyNow() {
     console.log('testing readyNow');
     $('#employee-submit').on('click', addEmployeeInputs);
-    $('#employee-submit').on('click', calculateMonthlyExpense);
+    $('body').on('click', '.delete-button', deleteEmployee);
 
     
 }
@@ -28,23 +28,26 @@ function addEmployeeInputs () {
         <td>${employeeId}</td>
         <td>${employeeTitle}</td>
         <td>${annualSalary}</td>
+        <td><button class="delete-button">Delete</button></td>
     </tr>
     `)
-    
-     $('#monthly-expenses').html(
-        sum += annualSalary/12
-        );
+    sum += annualSalary/12
+     $('#monthly-expenses').text(`
+        Monthly Expenses: $${sum}
+        `);
      if (sum > 20000) {
         console.log('too expensive');
-        
+        //document.getElementById("monthly-expenses").style.backgroundColor="red"
+        $('#monthly-expenses').addClass("red");
+
      }
      
     //Clear input fields after 'submit' button is clicked.
     $('input').val('');
 }
 
-function calculateMonthlyExpense () {
-    console.log('in calculateMonthlyExpense');
+//function calculateMonthlyExpense () {
+    //console.log('in calculateMonthlyExpense');
     // let monthlyExpense = (annualSalary/12);
     // console.log(monthlyExpense);
     // $('#annual-expenses').append(`
@@ -56,7 +59,7 @@ function calculateMonthlyExpense () {
     //     $('#annual-expenses').append(`
     //         <h4></h4>
     //      `)
-     }
+     //}
    
 
 
@@ -67,5 +70,10 @@ function calculateMonthlyExpense () {
 //     `)
 
 // }
+
+function deleteEmployee() {
+    console.log('in delete employee');
+    $(this).parent().parent().empty();
+}
 
 

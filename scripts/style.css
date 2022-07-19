@@ -6,12 +6,56 @@ header {
 #employee-data {
     color:blue;
     
-    
 }
-table, th, td {
+
+thead {
+    background-color: aquamarine;
+}
+
+th, td {
     border: 1px solid blue;
     border-collapse:collapse;
+    padding: 10px;
+}
+table {
+    
+   
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
+
+.submit-button {
+    float: right;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 10px;
+    padding:10px 20px;
+    font-size:20px;
+}
+
+.red {
+    background-color: red;
+}
+
+#monthly-expenses {
+    width:50%;
+
+}
+
+.input-container {
+    display:flex;
+    justify-content: space-between;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 25px;
+}
+
+
+
+
 
   
 

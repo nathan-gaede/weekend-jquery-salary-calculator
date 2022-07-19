@@ -38,7 +38,7 @@ A 'Submit' button should collect the form information, store the information to 
 
 - [x] Clear the input fields
 - [x] Calculate monthly costs
-- [] If monthly total cost exceeds $20,000 add a red background color to the total monthly cost
+- [x] If monthly total cost exceeds $20,000 add a red background color to the total monthly cost
 
 Create a delete button that removes an employee from the DOM. For Base mode, it does **not** need to remove that Employee's salary from the reported total.
 
